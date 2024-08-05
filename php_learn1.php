@@ -12,7 +12,8 @@
     <?php
     $variable = "Hong Quan";
     echo "xin chào, {$variable}" . "<br/>";
-    echo "xin chào, " . $variable . "<br/>";
+    echo 'xin chào, ' . $variable . '<br/>';
+    echo "xin chào $variable <br/>";
     echo "Đây là php" . "<br/>"; //câu lệnh in dữ liệu trong php
 
     $a = 5;
@@ -48,6 +49,9 @@
     $std1 = "Hong Quan";
     $std2 = "Hằng";
 
+    var_dump($std1); // in ra kiểu dữ liệu + giá trị 
+    echo "<br/>";
+
     $stu = array($std1, $std2, "Minh"); //tạo mảng
     $stu[] = "Anh"; //thêm mới dữ liệu mảng, để chỉ số thì sẽ thêm vào chỉ số đó, còn ko thì auto thêm
     $stu[2] = "Anh1";
@@ -66,6 +70,15 @@
     foreach ($stu as $item) {
         echo $item . "<br/>";
     }
+
+
+
+    echo "Hằng số";
+    const _USERNAME = "Hongquan";
+    define("_PASSWORD", 123456); //nên đặt tên theo cách _USER hoặc _user,
+    // quy tắc underscore nhưng viết hoa
+
+    echo "<br>username:" . _USERNAME . " <br> password:" . _PASSWORD . " <br>";
     ?>
 
     <!-- form -->
